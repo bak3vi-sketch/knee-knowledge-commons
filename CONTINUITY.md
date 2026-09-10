@@ -28,6 +28,7 @@ Prove a safe, traceable, useful end-to-end knowledge workflow for Vietnamese pat
 - `docs/ARCHITECTURE.md` is the canonical architecture map; do not create a duplicate root architecture file.
 - `docs/OWNER_GUIDE.vi.md` is a concise Vietnamese owner guide, not a mirror of all English project documentation.
 - Keep `README.vi.md` for the initial Vietnamese community entry point; do not create parallel `.vi.md` copies of every policy/plan.
+- Repository structural/continuity invariants that are mechanically checkable are enforced by `scripts/validate_repo.py` and GitHub Actions; medical correctness is not delegated to that validator.
 
 ## State
 
@@ -36,10 +37,11 @@ Prove a safe, traceable, useful end-to-end knowledge workflow for Vietnamese pat
 - [x] Adopted Vietnam-first, global-ready strategy.
 - [x] Narrowed Plan 0002 to one ACL ± meniscus vertical slice.
 - [x] Established website-as-front-door / GitHub-as-canonical-knowledge architecture.
+- [x] Added cross-agent continuity system: `CONTINUITY.md`, `CHANGELOG.md`, `docs/CHANGE_MAP.md`, pre-flight/post-flight rules, source-of-truth/critical paths, and repository structural quality gate.
+- [x] Simplified internal multilingual documentation to one canonical source by default while retaining purposeful Vietnamese entry/owner/patient-facing content.
 
 ### Now
-- [ ] Strengthen cross-agent continuity and documentation-sync workflow.
-- [ ] Prepare to execute Plan 0002 / Issue #3.
+- [ ] Execute Plan 0002 / Issue #3, beginning with WP1: define the first real Vietnamese patient information questions for the newly diagnosed ACL ± meniscus journey.
 
 ### Next
 1. Define and approve the first small set of real Vietnamese patient questions for the newly diagnosed ACL ± meniscus journey.
@@ -59,8 +61,12 @@ Prove a safe, traceable, useful end-to-end knowledge workflow for Vietnamese pat
 - Active execution issue: #3 — Vietnam ACL ± meniscus vertical-slice pilot
 - Repository-protection follow-up: #2
 - Agent entrypoint: `AGENTS.md`
+- Live project state: `CONTINUITY.md`
 - Architecture: `docs/ARCHITECTURE.md`
 - Documentation dependency map: `docs/CHANGE_MAP.md`
+- Notable history: `CHANGELOG.md`
+- Structural validator: `scripts/validate_repo.py`
+- Quality workflow: `.github/workflows/repository-quality.yml`
 - Evidence rules: `docs/EVIDENCE_MODEL.md`
 - Safety boundary: `MEDICAL_SAFETY.md`
 - Privacy boundary: `PRIVACY.md`
