@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knee-knowledge-commons.org/schemas/community-experience.schema.json",
+  "title": "Knee Knowledge Commons Community Experience Record",
+  "description": "Schema for normalized, privacy-aware community experience data. Raw/private submissions belong in the protected application database, not Git.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "injury_tags",
+    "age_group",
+    "activity_context",
+    "treatment_path",
+    "lessons",
+    "self_reported",
+    "review_status"
+  ],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "injury_tags": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "age_group": {
+      "type": "string",
+      "enum": ["under_18", "18_24", "25_34", "35_44", "45_54", "55_64", "65_plus", "not_shared"]
+    },
+    "activity_context": {"type": "array", "items": {"type": "string"}},
+    "injury_context": {"type": ["string", "null"]},
+    "diagnosis_summary": {"type": ["string", "null"]},
+    "treatment_path": {"type": "array", "items": {"type": "string"}},
+    "timeline_coarse": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    },
+    "lessons": {"type": "array", "items": {"type": "string"}},
+    "mistakes_or_regrets": {"type": "array", "items": {"type": "string"}},
+    "helpful_questions": {"type": "array", "items": {"type": "string"}},
+    "barriers": {"type": "array", "items": {"type": "string"}},
+    "outcomes_self_reported": {"type": "array", "items": {"type": "string"}},
+    "self_reported": {"const": true},
+    "review_status": {"type": "string", "enum": ["private_draft", "moderation_review", "approved_for_analysis", "approved_public_summary", "withdrawn"]},
+    "consent_version": {"type": ["string", "null"]},
+    "privacy_notes": {"type": ["string", "null"]}
+  }
+}
