@@ -1,7 +1,5 @@
 # Governance
 
-> **Project-owner Vietnamese version:** [GOVERNANCE.vi.md](GOVERNANCE.vi.md)
-
 Knee Knowledge Commons is community-driven, but popularity, automation, or professional status must not bypass evidence and safety review.
 
 ## Roles
