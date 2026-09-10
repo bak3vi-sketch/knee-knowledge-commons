@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Privacy and patient-data policy
+    url: https://github.com/bak3vi-sketch/knee-knowledge-commons/blob/main/PRIVACY.md
+    about: Do not post private medical records or identifiable patient health data in public issues.
+  - name: Medical safety policy
+    url: https://github.com/bak3vi-sketch/knee-knowledge-commons/blob/main/MEDICAL_SAFETY.md
+    about: Read the project's medical safety boundary before proposing patient-facing guidance.
