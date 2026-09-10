@@ -1,7 +1,5 @@
 # Product Vision
 
-> **Project-owner Vietnamese version:** [PRODUCT_VISION.vi.md](PRODUCT_VISION.vi.md)
-
 ## Mission
 Help people with knee injuries understand their situation, avoid preventable information mistakes, and participate more effectively in healthcare decisions by connecting trustworthy evidence with clearly labeled lived experience.
 
@@ -25,7 +23,9 @@ A multilingual, mobile-first public website where a person can:
 Clinicians and researchers should be able to submit sources, corrections, interpretation, and review through similarly convenient web workflows. GitHub remains available as an expert/maintainer path and canonical version history.
 
 ## Initial Vietnam product principle
-For ordinary users in Vietnam, Vietnamese is the primary interface and patient-facing content language. Technical implementation, research sources, and canonical machine-readable structures may remain English where that improves interoperability, but the project owner and Vietnamese users must not be forced to understand technical English to use or direct the project.
+For ordinary users in Vietnam, Vietnamese is the primary interface and patient-facing content language. Technical implementation, research sources, and canonical machine-readable structures may remain English where that improves interoperability.
+
+Internal project documentation does not need a dedicated Vietnamese mirror when browser/AI translation is sufficient. When the project owner needs to make a decision, agents should explain the decision and trade-offs in Vietnamese and plain language.
 
 ## Product values
 1. **Useful before impressive.** Optimize for better understanding and fewer avoidable mistakes, not AI novelty.
