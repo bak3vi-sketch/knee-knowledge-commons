@@ -3,7 +3,7 @@
 These rules apply to every AI/coding/research agent working in this repository.
 
 ## Required reading
-Before changing the project, read `README.md`, `MEDICAL_SAFETY.md`, `PRIVACY.md`, `GOVERNANCE.md`, `docs/EVIDENCE_MODEL.md`, `docs/ARCHITECTURE.md`, and the relevant file in `plans/`.
+Before changing the project, read `README.md`, `MEDICAL_SAFETY.md`, `PRIVACY.md`, `GOVERNANCE.md`, `docs/EVIDENCE_MODEL.md`, `docs/ARCHITECTURE.md`, `docs/TRANSLATION.md`, and the relevant file in `plans/`.
 
 ## Non-negotiable invariants
 1. Keep **research evidence**, **clinical interpretation**, and **patient experience** distinct.
@@ -16,6 +16,20 @@ Before changing the project, read `README.md`, `MEDICAL_SAFETY.md`, `PRIVACY.md`
 8. Keep AI-provider integrations replaceable. Avoid unnecessary lock-in to one model/vendor.
 9. Collect the minimum patient data required and preserve withdrawal/deletion paths outside Git.
 10. Plain language, mobile-first UX, accessibility, and multilingual support are product requirements.
+11. Follow **Vietnam-first, global-ready**: validate the first product, contribution flows, and patient-facing content in Vietnam while keeping schemas, evidence provenance, identifiers, and architecture globally reusable.
+12. Do not silently turn Vietnam-specific care pathways, insurance assumptions, terminology, referral patterns, or access constraints into universal guidance.
+13. Any document that requires a decision, approval, prioritization, or policy understanding from the project owner must include either a Vietnamese companion version or a clear Vietnamese owner-summary. The English technical/canonical version may remain authoritative where specified.
+
+## Owner-facing communication
+When proposing non-trivial work to the project owner, explain in Vietnamese, in plain language:
+- what problem is being solved;
+- why it should be done now;
+- expected benefit;
+- important risk/trade-off;
+- what decision, if any, the owner needs to make;
+- what would count as completion.
+
+Do not require the owner to interpret implementation details, schemas, AI infrastructure, or medical-research terminology without a plain-language explanation.
 
 ## Change discipline
 - Use an issue or plan for non-trivial work.
@@ -23,6 +37,7 @@ Before changing the project, read `README.md`, `MEDICAL_SAFETY.md`, `PRIVACY.md`
 - Update docs when architecture, data contracts, safety rules, or workflows change.
 - Medical claims must retain source provenance and review state.
 - If full source verification is unavailable, state that limitation and do not present a definitive conclusion.
+- When an owner-facing canonical document changes materially, update its Vietnamese companion/summary in the same PR or explicitly mark it stale.
 
 ## Never autonomously
 - merge safety-critical medical content;
@@ -31,6 +46,7 @@ Before changing the project, read `README.md`, `MEDICAL_SAFETY.md`, `PRIVACY.md`
 - interpret raw imaging as a clinical diagnosis for a user;
 - rank treatments/clinicians using unreviewed anecdotal outcomes;
 - hide conflicting evidence for simplicity;
-- strengthen a conclusion beyond what its source supports.
+- strengthen a conclusion beyond what its source supports;
+- expand from the Vietnam pilot to global product assumptions without evidence that the workflow is stable and reusable.
 
-When convenience conflicts with safety, privacy, traceability, or evidence integrity, preserve safety/privacy/traceability/integrity and document the trade-off.
+When convenience conflicts with safety, privacy, traceability, evidence integrity, or maintainable internationalization, preserve those constraints and document the trade-off.

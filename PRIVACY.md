@@ -1,5 +1,7 @@
 # Privacy and Patient Data Policy
 
+> **Project-owner Vietnamese version:** [PRIVACY.vi.md](PRIVACY.vi.md)
+
 Privacy is a core design constraint.
 
 ## Never commit identifiable health data to Git

@@ -1,5 +1,7 @@
 # AI Policy
 
+> **Project-owner Vietnamese version:** [AI_POLICY.vi.md](AI_POLICY.vi.md)
+
 AI is an accelerator and interface layer, not an authority.
 
 ## Appropriate AI roles
@@ -45,5 +47,7 @@ Maintain test cases covering:
 - translation fidelity;
 - privacy-sensitive prompts;
 - urgent-care escalation behavior.
+
+During the Vietnam-first phase, maintain a Vietnamese evaluation set before broader language rollout.
 
 A model upgrade is a product change: rerun evaluations before broad rollout.

@@ -6,6 +6,10 @@ Knee Knowledge Commons is a community project to help people prevent avoidable m
 
 The initial focus is knee ligament and meniscus injuries, especially ACL and meniscus injuries. The long-term goal is a multilingual, patient-friendly knowledge commons that combines reviewed medical evidence with clearly labeled lived experience.
 
+> **Launch strategy: Vietnam-first, global-ready.** The first real-world users, patient journeys, language, and local-context workflows will be developed and tested in Vietnam. Evidence structures, schemas, provenance, architecture, and governance remain internationally reusable so global expansion does not require rebuilding the project.
+
+**Tiếng Việt:** [README.vi.md](README.vi.md) · **Dành cho chủ dự án:** [docs/OWNER_GUIDE.vi.md](docs/OWNER_GUIDE.vi.md)
+
 ## What this project is
 
 - A versioned, reviewable source of truth for approved knowledge.
@@ -26,6 +30,16 @@ The initial focus is knee ligament and meniscus injuries, especially ACL and men
 > GitHub is the knowledge-management backend. The future website is the main door for patients and most contributors.
 
 Patients, clinicians, and researchers should eventually be able to read, search, ask questions, suggest corrections, and contribute through a simple website. GitHub remains available for contributors who prefer it and for maintainers, developers, reviewers, and agents.
+
+## Vietnam-first, global-ready
+
+During the initial product phase:
+- Vietnamese is the primary patient-facing language;
+- early user research and usability testing focus on people in Vietnam;
+- Vietnam-specific care pathways, terminology, and access constraints are stored as local context rather than universal medical truth;
+- core evidence records, schemas, identifiers, and architecture remain language- and provider-neutral;
+- international evidence remains usable when its population and scope are applicable;
+- global expansion happens only after the end-to-end workflow works reliably in the first market.
 
 ## Knowledge layers
 
@@ -59,10 +73,4 @@ Read these before contributing or asking an agent to change the project:
 
 ## Current status
 
-**Foundation v0.1.** The project is defining its rules, evidence model, data boundaries, user journeys, and architecture before scaling medical content. ACL and meniscus are the first knowledge pilots.
-
-## Tiếng Việt
-
-Đây là dự án cộng đồng mở nhằm giúp người gặp chấn thương khớp gối tiếp cận kiến thức dễ hiểu, có nguồn, học từ kinh nghiệm thực tế nhưng không nhầm kinh nghiệm cá nhân với bằng chứng y khoa. GitHub là nơi quản trị tri thức; về lâu dài website sẽ là cổng chính cho bệnh nhân, bác sĩ, nhà nghiên cứu và cộng đồng.
-
-**Dự án không thay thế bác sĩ và không đưa ra chẩn đoán/điều trị cá nhân.**
+**Foundation v0.1 is complete and the Vietnam-first strategy is adopted.** The first execution pilot is intentionally narrow: prove one complete, traceable Vietnamese patient journey for a person newly diagnosed with **ACL injury with or without associated meniscus injury** before expanding the ACL/meniscus knowledge base.
