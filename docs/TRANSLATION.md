@@ -1,5 +1,7 @@
 # Translation and Localization Strategy
 
+> **Project-owner Vietnamese version:** [TRANSLATION.vi.md](TRANSLATION.vi.md)
+
 The project should become multilingual without creating independent medical truths per language.
 
 ## Launch strategy
