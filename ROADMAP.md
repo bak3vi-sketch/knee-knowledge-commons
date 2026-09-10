@@ -1,7 +1,5 @@
 # Roadmap
 
-> **Project-owner Vietnamese version:** [ROADMAP.vi.md](ROADMAP.vi.md)
-
 The roadmap is stage-gated rather than date-driven. Safety, evidence quality, and usable workflows matter more than shipping a large feature set quickly.
 
 ## Strategic launch model — Vietnam-first, global-ready

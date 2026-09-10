@@ -1,7 +1,5 @@
 # Plan 0002 — Vietnam Vertical-Slice Pilot: Newly Diagnosed ACL ± Meniscus
 
-> **Project-owner Vietnamese version:** [0002-acl-meniscus-knowledge-pilot.vi.md](0002-acl-meniscus-knowledge-pilot.vi.md)
-
 Status: Planned
 
 ## Goal

@@ -1,7 +1,5 @@
 # AI Policy
 
-> **Project-owner Vietnamese version:** [AI_POLICY.vi.md](AI_POLICY.vi.md)
-
 AI is an accelerator and interface layer, not an authority.
 
 ## Appropriate AI roles
