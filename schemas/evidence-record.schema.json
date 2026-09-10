@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knee-knowledge-commons.org/schemas/evidence-record.schema.json",
+  "title": "Knee Knowledge Commons Evidence Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "source_type",
+    "source_url",
+    "publication_date",
+    "topics",
+    "population",
+    "summary",
+    "limitations",
+    "certainty",
+    "review_status",
+    "last_verified_at"
+  ],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "clinical_guideline",
+        "systematic_review",
+        "meta_analysis",
+        "randomized_trial",
+        "observational_study",
+        "diagnostic_study",
+        "prognostic_study",
+        "expert_consensus",
+        "position_statement",
+        "other"
+      ]
+    },
+    "source_url": {"type": "string", "format": "uri"},
+    "doi": {"type": ["string", "null"]},
+    "pmid": {"type": ["string", "null"]},
+    "publication_date": {"type": "string", "format": "date"},
+    "version": {"type": ["string", "null"]},
+    "topics": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "population": {"type": "string", "minLength": 1},
+    "scope_exclusions": {"type": "array", "items": {"type": "string"}},
+    "intervention": {"type": ["string", "null"]},
+    "comparator": {"type": ["string", "null"]},
+    "outcomes": {"type": "array", "items": {"type": "string"}},
+    "summary": {"type": "string", "minLength": 1},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "certainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["framework", "rating"],
+      "properties": {
+        "framework": {"type": "string", "enum": ["GRADE", "other", "not_assessed"]},
+        "rating": {"type": "string", "enum": ["high", "moderate", "low", "very_low", "not_assessed"]},
+        "assessed_by": {"type": ["string", "null"]},
+        "assessment_date": {"type": ["string", "null"], "format": "date"},
+        "notes": {"type": ["string", "null"]}
+      }
+    },
+    "review_status": {"type": "string", "enum": ["draft", "source_verified", "evidence_reviewed", "approved", "retired"]},
+    "reviewers": {"type": "array", "items": {"type": "string"}},
+    "last_verified_at": {"type": "string", "format": "date"},
+    "conflicts_with": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": ["string", "null"]}
+  }
+}
