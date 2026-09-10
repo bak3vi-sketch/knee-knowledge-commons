@@ -1,5 +1,7 @@
 # Medical Safety Policy
 
+> **Project-owner Vietnamese version:** [MEDICAL_SAFETY.vi.md](MEDICAL_SAFETY.vi.md)
+
 Knee Knowledge Commons provides education and evidence navigation. It does not provide individualized diagnosis or prescribe treatment.
 
 ## Allowed patient-facing behavior
