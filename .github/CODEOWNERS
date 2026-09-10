@@ -1,0 +1,10 @@
+# Foundation owner. Expand to clinical/evidence/privacy reviewer teams as the community grows.
+* @bak3vi-sketch
+
+# Core governance and safety invariants
+/AGENTS.md @bak3vi-sketch
+/MEDICAL_SAFETY.md @bak3vi-sketch
+/PRIVACY.md @bak3vi-sketch
+/GOVERNANCE.md @bak3vi-sketch
+/docs/adr/ @bak3vi-sketch
+/schemas/ @bak3vi-sketch
