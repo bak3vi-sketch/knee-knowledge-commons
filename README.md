@@ -8,7 +8,7 @@ The initial focus is knee ligament and meniscus injuries, especially ACL and men
 
 > **Launch strategy: Vietnam-first, global-ready.** The first real-world users, patient journeys, language, and local-context workflows will be developed and tested in Vietnam. Evidence structures, schemas, provenance, architecture, and governance remain internationally reusable so global expansion does not require rebuilding the project.
 
-**Tiếng Việt:** xem [README.vi.md](README.vi.md).
+**Tiếng Việt:** [README.vi.md](README.vi.md) · **Dành cho chủ dự án:** [docs/OWNER_GUIDE.vi.md](docs/OWNER_GUIDE.vi.md)
 
 ## What this project is
 
@@ -73,4 +73,4 @@ Read these before contributing or asking an agent to change the project:
 
 ## Current status
 
-**Foundation v0.1 complete. Strategy refinement in progress.** The first execution pilot is intentionally narrow: prove one complete, traceable Vietnamese patient journey for a person newly diagnosed with **ACL injury with or without associated meniscus injury** before expanding the ACL/meniscus knowledge base.
+**Foundation v0.1 is complete and the Vietnam-first strategy is adopted.** The first execution pilot is intentionally narrow: prove one complete, traceable Vietnamese patient journey for a person newly diagnosed with **ACL injury with or without associated meniscus injury** before expanding the ACL/meniscus knowledge base.
