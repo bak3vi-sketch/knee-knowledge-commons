@@ -50,6 +50,19 @@ During the initial product phase:
 
 See [Evidence Model](docs/EVIDENCE_MODEL.md).
 
+## Project memory and source-of-truth
+
+The repository is designed so a new AI agent or maintainer can recover context without depending on previous chat history:
+
+- `AGENTS.md` — how agents must work.
+- `CONTINUITY.md` — current goal, decisions, state, next work, and active references.
+- `ROADMAP.md` — long-term staged direction.
+- `plans/` — bounded execution plans and acceptance criteria.
+- `docs/ARCHITECTURE.md` — system boundaries, source-of-truth map, and critical paths.
+- `docs/adr/` — durable architecture decisions and rationale.
+- `docs/CHANGE_MAP.md` — what related documentation must be inspected after different kinds of changes.
+- `CHANGELOG.md` — notable historical changes; not a duplicate commit log.
+
 ## Repository map
 
 - `knowledge/` — approved patient-facing knowledge.
@@ -60,6 +73,14 @@ See [Evidence Model](docs/EVIDENCE_MODEL.md).
 - `docs/` — architecture, product, safety-supporting and governance-supporting documentation.
 - `plans/` — staged implementation plans.
 - `.github/` — contribution and review workflows.
+
+## Documentation language
+
+Internal project documentation normally has **one canonical version**; browser/AI translation may be used when needed. We do not maintain language mirrors by default because duplicate documents can drift.
+
+Dedicated Vietnamese artifacts are kept where they serve a distinct purpose, including the Vietnamese community README, the project-owner guide, and reviewed Vietnamese patient-facing medical content.
+
+See [Translation and Localization Strategy](docs/TRANSLATION.md).
 
 ## Non-negotiable safeguards
 
@@ -73,4 +94,6 @@ Read these before contributing or asking an agent to change the project:
 
 ## Current status
 
-**Foundation v0.1 is complete and the Vietnam-first strategy is adopted.** The first execution pilot is intentionally narrow: prove one complete, traceable Vietnamese patient journey for a person newly diagnosed with **ACL injury with or without associated meniscus injury** before expanding the ACL/meniscus knowledge base.
+Do not rely on this paragraph as the live project tracker. See [`CONTINUITY.md`](CONTINUITY.md) for current state.
+
+Foundation v0.1 is complete, the Vietnam-first strategy is adopted, and the first execution pilot is intentionally narrow: prove one complete, traceable Vietnamese patient journey for a person newly diagnosed with **ACL injury with or without associated meniscus injury** before expanding the ACL/meniscus knowledge base.
