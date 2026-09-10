@@ -13,10 +13,13 @@ For medical knowledge, `CHANGELOG.md` does **not** replace claim-level provenanc
 - Added a cross-agent continuity model centered on `CONTINUITY.md`.
 - Strengthened agent pre-flight/post-flight checks and documentation synchronization rules.
 - Extended architecture documentation with source-of-truth and critical-path guidance.
+- Advanced the active state to Plan 0002 / Issue #3 after completing the continuity-workflow upgrade.
 
 ### Added
 - `CONTINUITY.md` — live project state and cross-agent memory.
 - `docs/CHANGE_MAP.md` — documentation dependency/update triggers.
+- `scripts/validate_repo.py` — lightweight structural/continuity validator; it intentionally does not judge medical correctness.
+- `.github/workflows/repository-quality.yml` — runs the validator on pull requests and pushes to `main`.
 
 ## [2026-09-10] — Vietnam-first strategy and narrow pilot
 
