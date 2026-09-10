@@ -56,6 +56,28 @@ Trong giai đoạn đầu:
 - `plans/` — kế hoạch triển khai theo từng giai đoạn.
 - `.github/` — workflow đóng góp/review.
 
+## Trí nhớ của dự án dành cho agent
+
+- `AGENTS.md` — agent phải làm việc như thế nào.
+- `CONTINUITY.md` — dự án hiện đang ở đâu, đang làm gì và bước tiếp theo là gì.
+- `ROADMAP.md` — dự án sẽ đi đâu.
+- `plans/` — từng giai đoạn phải làm gì và khi nào được coi là hoàn thành.
+- `docs/ARCHITECTURE.md` — source-of-truth, boundary và critical path.
+- `docs/CHANGE_MAP.md` — thay đổi loại nào thì phải kiểm tra lại file nào.
+- `CHANGELOG.md` — các thay đổi đáng chú ý đã xảy ra.
+
+Mục tiêu là để agent mới có thể tiếp tục dự án dựa vào repo, không cần nhớ lịch sử chat trước đó.
+
+## Ngôn ngữ tài liệu
+
+Repo không duy trì bản dịch song song cho mọi tài liệu nội bộ. Các tài liệu canonical có thể đọc bằng chức năng dịch của trình duyệt hoặc nhờ AI giải thích.
+
+Hai tài liệu tiếng Việt được giữ riêng vì có mục đích cụ thể:
+- `README.vi.md` — cửa vào cho cộng đồng Việt Nam;
+- `docs/OWNER_GUIDE.vi.md` — hướng dẫn ngắn dành riêng cho chủ dự án.
+
+Nội dung y khoa dành trực tiếp cho bệnh nhân Việt Nam vẫn phải được xây dựng và review bằng tiếng Việt như một phần sản phẩm thực tế, không chỉ dựa mù quáng vào dịch tự động.
+
 ## Các quy tắc không được bỏ qua
 
 Trước khi thay đổi dự án hoặc giao agent làm việc, cần tuân thủ:
@@ -65,9 +87,11 @@ Trước khi thay đổi dự án hoặc giao agent làm việc, cần tuân th�
 - `GOVERNANCE.md`
 - `CONTRIBUTING.md`
 
-Các tài liệu cần chủ dự án ra quyết định phải có bản tiếng Việt hoặc phần tóm tắt tiếng Việt dễ hiểu.
+Khi có quyết định quan trọng cần chủ dự án duyệt, agent phải giải thích bằng tiếng Việt dễ hiểu trong báo cáo/PR; không cần tạo một file dịch song song chỉ để làm việc đó.
 
 ## Trạng thái hiện tại
+
+Trạng thái sống của dự án nằm tại [`CONTINUITY.md`](CONTINUITY.md).
 
 **Foundation v0.1 đã hoàn thành.** Bước thực thi tiếp theo là một pilot rất hẹp: chứng minh một hành trình hoàn chỉnh cho người Việt vừa được chẩn đoán **ACL có hoặc không kèm tổn thương sụn chêm**.
 
@@ -79,4 +103,4 @@ Pilot chỉ được coi là thành công khi có thể truy ngược:
 → `evidence record`
 → `nguồn gốc có thể kiểm tra`.
 
-Xem kế hoạch chi tiết: [`plans/0002-acl-meniscus-knowledge-pilot.vi.md`](plans/0002-acl-meniscus-knowledge-pilot.vi.md).
+Xem kế hoạch canonical: [`plans/0002-acl-meniscus-knowledge-pilot.md`](plans/0002-acl-meniscus-knowledge-pilot.md). Bạn có thể dùng dịch tự động nếu muốn đọc kế hoạch bằng tiếng Việt.
