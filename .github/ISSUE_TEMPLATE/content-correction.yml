@@ -1,0 +1,42 @@
+name: Content correction
+description: Report inaccurate, unclear, outdated, or potentially unsafe public content.
+title: "[Correction] "
+labels: ["content", "needs-review"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page or file
+      placeholder: knowledge/acl/... or page URL
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What appears wrong or unclear?
+      description: Quote only the minimum relevant wording and explain the concern.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Supporting source (optional but encouraged)
+      placeholder: DOI, PMID, guideline URL, or other source
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Suggested correction or question for reviewers
+  - type: textarea
+    id: coi
+    attributes:
+      label: Relevant conflict of interest
+      description: Disclose relevant financial/professional/product/clinic/treatment interests, or write None known.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public issue acknowledgement
+      options:
+        - label: I have not included identifiable patient health information, private records, or raw medical images.
+          required: true

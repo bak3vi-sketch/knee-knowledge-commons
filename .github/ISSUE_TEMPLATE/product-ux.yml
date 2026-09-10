@@ -1,0 +1,43 @@
+name: Product / UX idea
+description: Suggest a better user journey, website feature, contribution flow, accessibility improvement, or workflow.
+title: "[Product] "
+labels: ["product", "ux"]
+body:
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Primary audience
+      options:
+        - Patient / community member
+        - Clinician / rehabilitation professional
+        - Researcher
+        - Reviewer / maintainer
+        - Multiple groups
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem is the user facing?
+      description: Describe the user's situation before proposing a feature.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+    validations:
+      required: true
+  - type: textarea
+    id: benefit_risk
+    attributes:
+      label: Benefit and possible risks
+      description: Include medical-safety/privacy risks if relevant.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public issue acknowledgement
+      options:
+        - label: I have not included identifiable patient health information or private medical records.
+          required: true
