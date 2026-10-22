@@ -21,6 +21,15 @@ Do not strengthen a conclusion beyond its source.
 ## AI-assisted contributions
 AI is welcome for search, summarization, translation, structuring, and drafting. The contributor/reviewer remains responsible for source fidelity. Never cite a paper that cannot be verified to exist and support the claim.
 
+## Licensing and third-party rights
+
+Unless an accepted contribution explicitly states a compatible alternative license, original contributions follow the repository licensing policy in [LICENSE.md](LICENSE.md):
+
+- software code, scripts, machine-readable schemas, and project configuration → MIT License;
+- original prose documentation and knowledge content → CC BY 4.0.
+
+Only contribute material you have the right to submit. Do not copy third-party papers, guideline text, figures, tables, questionnaires, datasets, images, or code into the repository merely because they are publicly accessible or cited. Preserve attribution and license obligations where reuse is permitted.
+
 ## Pull requests
 Keep PRs focused and explain:
 - the problem being solved;
