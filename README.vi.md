@@ -56,6 +56,18 @@ Trong giai đoạn đầu:
 - `plans/` — kế hoạch triển khai theo từng giai đoạn.
 - `.github/` — workflow đóng góp/review.
 
+## Mã nguồn mở, tái sử dụng và bảo trì
+
+Repo này được thiết kế để có thể tái sử dụng, review và tiếp tục bảo trì, không phải một kho nội dung dùng một lần.
+
+- **Code, script, schema và cấu hình dự án:** giấy phép MIT — xem [`LICENSE-CODE`](LICENSE-CODE).
+- **Tài liệu chữ và nội dung tri thức nguyên gốc:** Creative Commons Attribution 4.0 International (CC BY 4.0) — xem [`LICENSE-CONTENT`](LICENSE-CONTENT).
+- **Nguồn/tài liệu của bên thứ ba:** vẫn giữ bản quyền và giấy phép gốc; việc trích dẫn không làm thay đổi giấy phép của nguồn — xem [`LICENSE.md`](LICENSE.md).
+
+Việc bảo trì được theo dõi bằng issue và pull request. `scripts/validate_repo.py` cùng GitHub Actions kiểm tra các quy tắc cấu trúc/continuity có thể kiểm tra bằng máy; độ đúng y khoa vẫn cần quy trình evidence và human review.
+
+Dự án hiện còn ở giai đoạn sớm. Công việc sản phẩm đang hoạt động là pilot hẹp về ACL ± sụn chêm cho người Việt, được theo dõi tại [Issue #3](https://github.com/bak3vi-sketch/knee-knowledge-commons/issues/3). Cách đóng góp nằm tại [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
 ## Trí nhớ của dự án dành cho agent
 
 - `AGENTS.md` — agent phải làm việc như thế nào.

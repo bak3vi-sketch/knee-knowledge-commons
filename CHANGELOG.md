@@ -9,6 +9,10 @@ For medical knowledge, `CHANGELOG.md` does **not** replace claim-level provenanc
 ## [Unreleased]
 
 ### Changed
+- Clarified open-source licensing boundaries: MIT for original code/scripts/schemas/configuration and CC BY 4.0 for original prose documentation and knowledge content; third-party materials retain their original rights and licenses.
+- Made repository maintenance status, active pilot work, contribution path, and licensing easier to discover from the English and Vietnamese READMEs.
+- Added licensing expectations and third-party-rights guidance to `CONTRIBUTING.md`.
+- Extended the structural validator so the core README, contribution, and licensing files are required repository invariants.
 - Simplified multilingual project documentation: browser/AI translation is acceptable for internal project documents; duplicate `.vi.md` mirrors are no longer required by default.
 - Added a cross-agent continuity model centered on `CONTINUITY.md`.
 - Strengthened agent pre-flight/post-flight checks and documentation synchronization rules.
@@ -16,6 +20,8 @@ For medical knowledge, `CHANGELOG.md` does **not** replace claim-level provenanc
 - Advanced the active state to Plan 0002 / Issue #3 after completing the continuity-workflow upgrade.
 
 ### Added
+- `LICENSE-CODE` — MIT License for original software code, scripts, machine-readable schemas, and project configuration.
+- `LICENSE-CONTENT` — CC BY 4.0 notice for original prose documentation and knowledge content.
 - `CONTINUITY.md` — live project state and cross-agent memory.
 - `docs/CHANGE_MAP.md` — documentation dependency/update triggers.
 - `scripts/validate_repo.py` — lightweight structural/continuity validator; it intentionally does not judge medical correctness.

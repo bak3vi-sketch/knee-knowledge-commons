@@ -74,6 +74,18 @@ The repository is designed so a new AI agent or maintainer can recover context w
 - `plans/` — staged implementation plans.
 - `.github/` — contribution and review workflows.
 
+## Open-source reuse and maintenance
+
+This repository is intentionally reusable and reviewable rather than a one-off content dump.
+
+- **Code, scripts, schemas, and project configuration:** MIT License. See [LICENSE-CODE](LICENSE-CODE).
+- **Original prose documentation and knowledge content:** Creative Commons Attribution 4.0 International. See [LICENSE-CONTENT](LICENSE-CONTENT).
+- **Third-party sources:** retain their original copyrights and licenses; citing a source does not relicense it. See [LICENSE.md](LICENSE.md).
+
+Maintenance work is tracked through issues and pull requests. Repository structure and continuity invariants are checked by `scripts/validate_repo.py` and GitHub Actions; medical correctness remains a human-review responsibility and is not delegated to CI or AI.
+
+The project is early-stage. The current active product work is a narrow Vietnam ACL ± meniscus vertical-slice pilot, tracked in [Issue #3](https://github.com/bak3vi-sketch/knee-knowledge-commons/issues/3). Contributions, corrections, evidence updates, and technical improvements are welcome through [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Documentation language
 
 Internal project documentation normally has **one canonical version**; browser/AI translation may be used when needed. We do not maintain language mirrors by default because duplicate documents can drift.

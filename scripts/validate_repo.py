@@ -17,6 +17,12 @@ from urllib.parse import unquote
 ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED_FILES = [
+    "README.md",
+    "README.vi.md",
+    "LICENSE.md",
+    "LICENSE-CODE",
+    "LICENSE-CONTENT",
+    "CONTRIBUTING.md",
     "AGENTS.md",
     "CONTINUITY.md",
     "CHANGELOG.md",
