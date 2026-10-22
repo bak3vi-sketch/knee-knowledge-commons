@@ -4,7 +4,7 @@ This file is the **live project memory for agents and maintainers**. It answers:
 
 Do not copy conversation history here. Update only when goals, constraints, important decisions, state, open questions, or the active working set materially change.
 
-Last updated: 2026-09-10
+Last updated: 2026-10-22
 
 ## Goal
 Prove a safe, traceable, useful end-to-end knowledge workflow for Vietnamese patients with newly diagnosed **ACL injury with or without associated meniscus injury**, then reuse that workflow before expanding content or product scope.
@@ -29,6 +29,7 @@ Prove a safe, traceable, useful end-to-end knowledge workflow for Vietnamese pat
 - `docs/OWNER_GUIDE.vi.md` is a concise Vietnamese owner guide, not a mirror of all English project documentation.
 - Keep `README.vi.md` for the initial Vietnamese community entry point; do not create parallel `.vi.md` copies of every policy/plan.
 - Repository structural/continuity invariants that are mechanically checkable are enforced by `scripts/validate_repo.py` and GitHub Actions; medical correctness is not delegated to that validator.
+- Original software code, scripts, machine-readable schemas, and project configuration use the MIT License; original prose documentation and knowledge content use CC BY 4.0. Third-party materials retain their original rights and licenses.
 
 ## State
 
@@ -39,6 +40,7 @@ Prove a safe, traceable, useful end-to-end knowledge workflow for Vietnamese pat
 - [x] Established website-as-front-door / GitHub-as-canonical-knowledge architecture.
 - [x] Added cross-agent continuity system: `CONTINUITY.md`, `CHANGELOG.md`, `docs/CHANGE_MAP.md`, pre-flight/post-flight rules, source-of-truth/critical paths, and repository structural quality gate.
 - [x] Simplified internal multilingual documentation to one canonical source by default while retaining purposeful Vietnamese entry/owner/patient-facing content.
+- [x] Clarified reusable open-source licensing boundaries for original code and original knowledge/documentation while preserving third-party rights.
 
 ### Now
 - [ ] Execute Plan 0002 / Issue #3, beginning with WP1: define the first real Vietnamese patient information questions for the newly diagnosed ACL ± meniscus journey.
@@ -60,6 +62,7 @@ Prove a safe, traceable, useful end-to-end knowledge workflow for Vietnamese pat
 - Active plan: `plans/0002-acl-meniscus-knowledge-pilot.md`
 - Active execution issue: #3 — Vietnam ACL ± meniscus vertical-slice pilot
 - Repository-protection follow-up: #2
+- Open-source readiness follow-up: #6
 - Agent entrypoint: `AGENTS.md`
 - Live project state: `CONTINUITY.md`
 - Architecture: `docs/ARCHITECTURE.md`
@@ -67,6 +70,7 @@ Prove a safe, traceable, useful end-to-end knowledge workflow for Vietnamese pat
 - Notable history: `CHANGELOG.md`
 - Structural validator: `scripts/validate_repo.py`
 - Quality workflow: `.github/workflows/repository-quality.yml`
+- Licensing policy: `LICENSE.md`, `LICENSE-CODE`, `LICENSE-CONTENT`
 - Evidence rules: `docs/EVIDENCE_MODEL.md`
 - Safety boundary: `MEDICAL_SAFETY.md`
 - Privacy boundary: `PRIVACY.md`
