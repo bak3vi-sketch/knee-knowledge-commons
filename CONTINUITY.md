@@ -62,7 +62,6 @@ Prove a safe, traceable, useful end-to-end knowledge workflow for Vietnamese pat
 - Active plan: `plans/0002-acl-meniscus-knowledge-pilot.md`
 - Active execution issue: #3 — Vietnam ACL ± meniscus vertical-slice pilot
 - Repository-protection follow-up: #2
-- Open-source readiness follow-up: #6
 - Agent entrypoint: `AGENTS.md`
 - Live project state: `CONTINUITY.md`
 - Architecture: `docs/ARCHITECTURE.md`
